@@ -1,4 +1,5 @@
 # Bikini Bottom Election - Part 2
+![Bikini Bottom](images/bikini-bottom.jpg)
 
 ## Review
 In [Part 1](https://github.com/bitmakerlabs/bb-election-part-1) of this assignment, we looked at querying a JSON API with AJAX for some data about election candidates, and inserting them into the HTML with jQuery. Today, we'll continue where we left off and allow users to vote on candidates!
