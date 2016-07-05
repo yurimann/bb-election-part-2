@@ -54,7 +54,7 @@ Alright, let's make it happen.
   + Once we click the vote button, and our `POST` request is sent, make sure that we're receiving a `200` (a success) status code in response to our AJAX request. You'll need to chain another function to your AJAX request in addition to `.done`, called `.fail`. `.done` is triggered when the request completes successfully, `.fail` when it does not. If you're getting back a different status code, something isn't quite right with your request, review the codes listed out above.
 1. **STRETCH:**
   + Update the vote counts after a vote
-  + Disable the vote buttons after a vote (its fine if they reenable after refresh)
+  + Disable the vote buttons after a vote (it's fine if they reenable after refresh)
 
 ## We're done!
 
