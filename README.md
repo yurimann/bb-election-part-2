@@ -13,25 +13,12 @@ Because we're building off of Part 1, go ahead and copy your `index.html` and `e
 Lets add some buttons that'll let us vote for a candidate.
 
 We're gonna be making use of a second endpoint in our API to do this, `POST /vote`. This endpoint requires either an `id` or a `name` be given to it, so that it knows who the vote is going to.  We can insert this info either into the **query string** or the **body** of the request:
-```js
-// THESE TWO ARE THE EQUIVALENT
-  method: POST,
-  url: "https://bb-election-api.herokuapp.com/vote?id=577805c3e30089e66c1ede19",
-  body: {}
-// ============================
-  method: POST,
-  url: "https://bb-election-api.herokuapp.com/vote",
-  body: { "id" : "577805c3e30089e66c1ede19" }
-
-// AND THESE TWO ARE EQUIVALENT
-  method: POST,
-  url: "https://bb-election-api.herokuapp.com/vote?name=Gary",
-  body: {}
-// ============================
-  method: POST,
-  url: "https://bb-election-api.herokuapp.com/vote",
-  body: { "name" : "Gary" }
-```
++ These two are equivalent:
+  + **method:** `POST`, **url:** `https://bb-election-api.herokuapp.com/vote?id=577805c3e30089e66c1ede19`, **body:** `{}`
+  + **method:** `POST`, **url:** `https://bb-election-api.herokuapp.com/vote`, **body:** `{"id" : "577805c3e30089e66c1ede19"}`
++ And these two are equivalent:
+  + **method:** `POST`, **url:** `https://bb-election-api.herokuapp.com/vote?name=Gary`, **body:** `{}`
+  + **method:** `POST`, **url:** `https://bb-election-api.herokuapp.com/vote`, **body:** `{"name" : "Gary"}`
 
 If you want to see it in action, try sending some requests through one of the addons I mentioned above.
 + If you receive a response with a `200` status, and message of `Ok`, it worked!
