@@ -28,7 +28,7 @@ If you want to see it in action, try sending some requests through one of the ad
 
 Alright, let's make it happen.
 
-### TODO
+### Your TODO
 
 1. Add a vote `<button>` or `<a>` tag to each candidate, under the `<li>` element. You'll have to add these buttons with jQuery after your first load of the candidates completes, because the candidates won't be populated until this request completes.
 1. Each one should have a `data-id` or `data-name` attribute where we'll store the id or name of the candidate. Update your code from **Part 1** where you're inserting the `<li>` element to also insert the candidate's id or name into one of these `data-` attributes.
